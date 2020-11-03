@@ -1,22 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+	font-size: 62.5%;
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(26, 26, 26);
+	/* background-image: linear-gradient(to bottom, #00c8ecb2, #002be898); */
+	background-color: #fed3a494;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	font-size: 2rem;
 }
 
+/*HEADER*/
 header {
-  width: 100%;
-  text-align: center;
-  background: white;
-  padding: 20px;
-  border: 1px solid black;
+	margin: 5% auto;
+	width: 80%;
+	padding: 1rem;
+	text-align: center;
+	background-color: white;
+	box-shadow: 7px 7px 0px#EA9B58;
 }
 
 header > h1 {
-  color: black;
-  font-family: sans-serif;
+	color: rgba(61, 71, 71, 0.801);
+	color: #ffbd86;
+}
+
+/*CHOICES*/
+.choices {
+	margin-top: 5rem;
+	display: flex;
+	justify-content: center;
+}
+.choice {
+	background-color: white;
+	width: 20rem;
+	height: 20rem;
+	border-radius: 50%;
+	margin-right: 2rem;
+	box-shadow: 7px 7px 0px #ea9b58;
+	text-align: center;
+}
+
+.choice img {
+	width: 70%;
+	padding-top: 3rem;
+}
+
+/* SCORE BOARD */
+.score-board {
+	width: 40rem;
+	display: flex;
+	margin: 10rem auto;
+}
+.user,
+.computer {
+	display: flex;
+	background-color: white;
+	box-shadow: 7px 7px 0px #ea9b58;
+	padding: 3rem;
+	width: 200rem;
+	text-align: center;
+}
+
+.computer {
+	margin-left: 2rem;
+}
+
+#user-label,
+#computer-label {
+	font-size: 1.8rem;
+	color: #fba762;
+}
+
+#user-score,
+#computer-score {
+	margin-top: 2rem;
+	font-size: 5rem;
+	color: #3b3b3b;
+}
+
+/* RESULT */
+.result {
+	text-align: center;
+	font-size: 4rem;
+	color: #3b3b3b;
+	background-color: white;
+	width: 60%;
+	padding: 2rem;
+	margin: 0 auto;
+	border: 2px dotted #fd933c;
 }
